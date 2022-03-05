@@ -244,8 +244,8 @@ class WrappedMediaPlayer internal constructor(
             if (playing) {
                 playing = false
                 player?.pause()
-                player?.seekTo(0)
             }
+            player?.seekTo(0)
         } else {
             release()
         }
